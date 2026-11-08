@@ -1,0 +1,54 @@
+{
+    "River": {
+        "ActorClass": "WaterBodyRiver",
+        "Name": "WaterBodyRiver_MainValley",
+        "SplinePointsCount": 8,
+        "Direction": "EastToWest",
+        "StartLocation": [
+            900.0,
+            1100.0,
+            320.0
+        ],
+        "EndLocation": [
+            -950.0,
+            980.0,
+            110.0
+        ],
+        "WidthProfileMeters": {
+            "Upstream": 6.5,
+            "Midstream": 10.0,
+            "Downstream": 14.2
+        },
+        "LandscapeCarving": {
+            "bAffectsLandscape": true,
+            "CarveDepthMeters": 1.4,
+            "BankWidthMeters": 4.0,
+            "FalloffSettings": {
+                "ChannelDepth": 1.8,
+                "EdgeOffset": 2.5
+            }
+        },
+        "SimulationParameters": {
+            "CurrentSpeedMetersPerSec": 2.4,
+            "ShallowColorHex": "#2FA4A9",
+            "DeepColorHex": "#0E7490",
+            "WaterClarityDistanceMeters": 8.5,
+            "FoamAmount": 0.35,
+            "WaveRoughness": 0.28
+        }
+    },
+    "Lake": {
+        "ActorClass": "WaterBodyLake",
+        "Name": "WaterBodyLake_HighPlateau",
+        "CenterLocation": [
+            520.0,
+            1080.0,
+            290.0
+        ],
+        "RadiusMeters": 65.0,
+        "WaterElevationMeters": 288.5,
+        "bAffectsLandscape": true,
+        "ClarityMeters": 12.0,
+        "ColorHex": "#155E75"
+    }
+}

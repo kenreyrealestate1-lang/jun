@@ -1,0 +1,107 @@
+{
+    "MapName": "L_World",
+    "PackagePath": "/Game/Maps/L_World",
+    "WorldPartition": {
+        "bEnable": true,
+        "GridSizeMeters": 256.0,
+        "LoadingRangeMeters": 1500.0
+    },
+    "Landscape": {
+        "ActorName": "Landscape_Alpine_Valley",
+        "HeightmapFile": "Content/Environment/Landscape/Heightmap_Alpine_2017.r16",
+        "Resolution": [
+            2017,
+            2017
+        ],
+        "Scale": [
+            100.0,
+            100.0,
+            150.0
+        ],
+        "Location": [
+            -100800.0,
+            -100800.0,
+            0.0
+        ],
+        "NaniteEnabled": true,
+        "EditLayersEnabled": true,
+        "Material": "/Game/Environment/Landscape/M_Landscape_Substrate_Auto"
+    },
+    "Water": {
+        "River": "/Game/Environment/Water/WaterBodyRiver_MainValley",
+        "Lake": "/Game/Environment/Water/WaterBodyLake_HighPlateau"
+    },
+    "LightingAndAtmosphere": {
+        "SunElevation": 25.0,
+        "SunAzimuth": 225.0,
+        "SunIntensityLux": 75000.0,
+        "ColorTemperature": 4800.0,
+        "CloudCoverage": 0.35,
+        "VolumetricFog": true,
+        "Tonemapper": "ACES",
+        "EV100": 14.5,
+        "UseHDRI": false
+    },
+    "ReviewCameras": [
+        {
+            "Name": "Cam_Valley_Overview",
+            "Location": [
+                85000.0,
+                -45000.0,
+                65000.0
+            ],
+            "Rotation": [
+                -22.0,
+                -145.0,
+                0.0
+            ],
+            "FocalLength": 35.0,
+            "Description": "Vue plongeante d'ensemble sur le massif nord, la vall\u00e9e en U et le m\u00e9andre de la rivi\u00e8re"
+        },
+        {
+            "Name": "Cam_River_EyeLevel",
+            "Location": [
+                -15000.0,
+                8000.0,
+                14500.0
+            ],
+            "Rotation": [
+                -4.0,
+                78.0,
+                0.0
+            ],
+            "FocalLength": 50.0,
+            "Description": "Vue au ras de l'eau turquoise avec reflets Lumen et galets de berge"
+        },
+        {
+            "Name": "Cam_Forest_Canopy",
+            "Location": [
+                25000.0,
+                32000.0,
+                22000.0
+            ],
+            "Rotation": [
+                12.0,
+                -60.0,
+                0.0
+            ],
+            "FocalLength": 40.0,
+            "Description": "Vue en sous-bois d'\u00e9pic\u00e9as et de m\u00e9l\u00e8zes sous lumi\u00e8re rasante \u00e0 25\u00b0"
+        },
+        {
+            "Name": "Cam_Mountain_Peaks",
+            "Location": [
+                -30000.0,
+                -60000.0,
+                35000.0
+            ],
+            "Rotation": [
+                28.0,
+                45.0,
+                0.0
+            ],
+            "FocalLength": 65.0,
+            "Description": "Vue ascendante sur les cimes dolomitiques et la Sky Atmosphere"
+        }
+    ]
+}

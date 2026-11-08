@@ -1,0 +1,6 @@
+{
+  "name": "Unreal Engine 5 Web Studio & Installation Hub",
+  "description": "Interactive 3D game engine studio with realistic graphics, dynamic Lumen-style lighting, Blueprint visual scripting, real-time viewport, and official Unreal Engine installation guide.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

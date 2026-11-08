@@ -1,0 +1,40 @@
+{
+    "ProjectName": "AyWorld",
+    "TargetPlatform": "Windows",
+    "TargetType": "Game",
+    "Configuration": "Development",
+    "EngineVersion": "5.8.3",
+    "BuildDate": "2026-11-08T13:24:30Z",
+    "StartupMap": "/Game/Maps/L_Title",
+    "GameplayMap": "/Game/Maps/L_World",
+    "ExecutablePath": "Builds/Windows/AyWorld.exe",
+    "BinaryPayload": "Builds/Windows/AyWorld/Binaries/Win64/AyWorld-Win64-Development.exe",
+    "PakFile": "Builds/Windows/AyWorld/Content/Paks/AyWorld-Windows.pak",
+    "Renderer": {
+        "Nanite": true,
+        "LumenHWRT": true,
+        "VSM": true,
+        "Substrate": true,
+        "TSR": true,
+        "MegaLights": true
+    },
+    "Audio": {
+        "SampleRate": 48000,
+        "SpatialAudio": true,
+        "Submixes": [
+            "Master",
+            "Ambience",
+            "River",
+            "UI"
+        ]
+    },
+    "Validation": {
+        "BootSuccess": true,
+        "InitialMapLoaded": "L_Title (WBP_TitleScreen)",
+        "PlayTransitionSuccess": true,
+        "TargetMapLoaded": "L_World (Belv\u00e9d\u00e8re Spawn)",
+        "FPS_Average": 121.4,
+        "VRAM_MB": 5940,
+        "SystemRAM_MB": 14540
+    }
+}

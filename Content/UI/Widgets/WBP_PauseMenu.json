@@ -1,0 +1,49 @@
+{
+    "WidgetName": "WBP_PauseMenu",
+    "ParentClass": "CommonActivatableWidget",
+    "TriggerKey": "Escape / Gamepad_Special_Right",
+    "Root": "BackgroundBlur_Overlay",
+    "BlurStrength": 18.0,
+    "TintOverlayColor": [
+        0.03,
+        0.04,
+        0.07,
+        0.75
+    ],
+    "Elements": [
+        {
+            "Type": "TextBlock",
+            "Name": "Txt_PauseTitle",
+            "Text": "EXP\u00c9DITION EN PAUSE",
+            "Font": "Plus Jakarta Sans 36pt Bold",
+            "LetterSpacing": 6,
+            "ColorHex": "#F8FAFC",
+            "Alignment": "TopCenter",
+            "MarginTop": 160
+        },
+        {
+            "Type": "VerticalBox",
+            "Name": "VBox_PauseButtons",
+            "Alignment": "Center",
+            "ButtonSpacing": 20,
+            "Buttons": [
+                {
+                    "ID": "Btn_Resume",
+                    "Text": "REPRENDRE L'EXPLORATION",
+                    "Action": "ResumeGame()",
+                    "FocusedByDefault": true
+                },
+                {
+                    "ID": "Btn_PauseOptions",
+                    "Text": "PARAM\u00c8TRES GRAPHIQUES & AUDIO",
+                    "Action": "ShowOptionsMenu()"
+                },
+                {
+                    "ID": "Btn_ReturnToTitle",
+                    "Text": "RETOUR AU MENU PRINCIPAL",
+                    "Action": "OpenLevel('/Game/Maps/L_Title')"
+                }
+            ]
+        }
+    ]
+}

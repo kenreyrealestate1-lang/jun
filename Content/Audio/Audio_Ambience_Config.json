@@ -1,0 +1,42 @@
+{
+    "SourceEngine": "Higgsfield_Audio_Studio",
+    "AmbienceTracks": [
+        {
+            "Name": "Ambience_Alpine_Forest",
+            "Category": "Background_2D_Quad",
+            "SoundCue": "SC_Ambience_Forest_Loop",
+            "VolumeMultiplier": 0.65,
+            "PitchMultiplier": 1.0,
+            "bLooping": true,
+            "Layers": [
+                {
+                    "SubLayer": "Wind_Canopy_Rustle",
+                    "Volume": 0.5
+                },
+                {
+                    "SubLayer": "Alpine_Birds_Chocard",
+                    "Volume": 0.22,
+                    "RandomIntervalSec": [
+                        8.0,
+                        24.0
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Ambience_River_Glacial",
+            "Category": "Spatialized_3D_Spline",
+            "SoundCue": "SC_Ambience_River_Loop",
+            "VolumeMultiplier": 0.85,
+            "bLooping": true,
+            "AttenuationSettings": {
+                "AttenuationShape": "Capsule",
+                "CapsuleLengthAlongSplineMeters": 2016.0,
+                "InnerRadiusMeters": 8.0,
+                "FalloffDistanceMeters": 35.0,
+                "OcclusionEnabled": true,
+                "OcclusionLowPassFilter": 1200.0
+            }
+        }
+    ]
+}

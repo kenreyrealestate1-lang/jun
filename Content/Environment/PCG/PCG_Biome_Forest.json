@@ -1,0 +1,87 @@
+{
+    "GraphName": "PCG_Biome_Forest",
+    "TargetActor": "Landscape_Alpine_Valley",
+    "InputData": [
+        {
+            "Type": "Landscape",
+            "Name": "LandscapeData"
+        },
+        {
+            "Type": "Spline",
+            "Name": "RiverExclusionSpline",
+            "BufferMeters": 12.0
+        },
+        {
+            "Type": "Spline",
+            "Name": "TrailPathSpline",
+            "ClearanceRadiusMeters": 3.5
+        }
+    ],
+    "FilterNodes": [
+        {
+            "Node": "AltitudeRangeFilter",
+            "MinAltitudeMeters": 850.0,
+            "MaxAltitudeMeters": 2100.0,
+            "StrictCutoff": true
+        },
+        {
+            "Node": "SlopeAngleFilter",
+            "MinSlopeDeg": 2.0,
+            "MaxSlopeDeg": 34.0,
+            "FalloffRange": 4.0
+        },
+        {
+            "Node": "DifferenceRiverWater",
+            "Source": "TreePoints",
+            "Difference": "RiverExclusionSpline",
+            "Mode": "Subtract"
+        },
+        {
+            "Node": "DifferenceWalkingTrail",
+            "Source": "TreePoints",
+            "Difference": "TrailPathSpline",
+            "Mode": "Subtract"
+        }
+    ],
+    "SpawnRules": {
+        "Trees": {
+            "DensityPerHectare": 420,
+            "SpeciesRatio": {
+                "Epicea_Commun": 0.55,
+                "Meleze_Europe": 0.3,
+                "Hetre_Commun": 0.15
+            },
+            "ScaleRange": [
+                0.85,
+                1.25
+            ],
+            "RandomYawRotation": [
+                0.0,
+                360.0
+            ],
+            "AlignToSurfaceNormal": 0.25
+        },
+        "Undergrowth": {
+            "ParentRequirement": "InsideTreeCanopyRadius",
+            "PropsPerTree": [
+                1,
+                3
+            ],
+            "Items": [
+                "SM_Prop_Stump_01",
+                "SM_Prop_Fallen_Trunk_02",
+                "SM_Prop_Alpine_Bush_03",
+                "SM_Prop_Fern_Cluster_04"
+            ]
+        },
+        "LooseBoulders": {
+            "SlopeTriggerMinDeg": 22.0,
+            "SlopeTriggerMaxDeg": 38.0,
+            "Items": [
+                "SM_Rock_Karst_Boulder_01",
+                "SM_Rock_Forest_Moss_03",
+                "SM_Rock_Cliff_Fragment_04"
+            ]
+        }
+    }
+}

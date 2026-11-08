@@ -1,0 +1,28 @@
+{
+    "GraphName": "PCG_Rocks_Cliffs",
+    "TargetActor": "Landscape_Alpine_Valley",
+    "FilterNodes": [
+        {
+            "Node": "SlopeCliffFilter",
+            "MinSlopeDeg": 38.0,
+            "MaxSlopeDeg": 90.0
+        }
+    ],
+    "SpawnRules": {
+        "Cliffs": {
+            "Items": [
+                "SM_Karst_Cliff_Plate_01",
+                "SM_Karst_Cliff_Tower_02"
+            ],
+            "AlignToNormal": true,
+            "ScaleRange": [
+                0.9,
+                1.4
+            ],
+            "RandomRollPitchDeg": [
+                -8.0,
+                8.0
+            ]
+        }
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "MapName": "L_Title",
+    "Type": "RealTime_Cinematic_Title_Level",
+    "CameraSetup": {
+        "ActorClass": "CineCameraActor",
+        "Name": "CineCam_Title_SlowTrack",
+        "InitialLocation": [
+            62000.0,
+            -28000.0,
+            48000.0
+        ],
+        "SplinePathLengthMeters": 450.0,
+        "TrackingSpeedMetersPerSec": 1.2,
+        "LookAtTarget": [
+            -12000.0,
+            4500.0,
+            18000.0
+        ],
+        "FocalLength": 32.0,
+        "FocusDistance": 120000.0,
+        "Aperture": 8.0
+    },
+    "Lighting": {
+        "TimeOfDay": "16h30 (Fin d'apr\u00e8s-midi)",
+        "SunElevation": 25.0,
+        "SunIntensityLux": 75000.0,
+        "VolumetricFog": true
+    }
+}

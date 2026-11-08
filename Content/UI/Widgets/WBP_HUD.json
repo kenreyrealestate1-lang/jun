@@ -1,0 +1,52 @@
+{
+    "WidgetName": "WBP_HUD",
+    "ParentClass": "UserWidget",
+    "Root": "CanvasPanel",
+    "DesignPhilosophy": "Contemplative Zero-Clutter",
+    "BottomElementsAllowed": false,
+    "TopCompass": {
+        "Name": "Compass_Ribbon_Horizontal",
+        "Alignment": "TopCenter",
+        "MarginTop": 25,
+        "Width": 420,
+        "Height": 28,
+        "Opacity": 0.65,
+        "CardinalMarks": [
+            {
+                "Degree": 0,
+                "Label": "N"
+            },
+            {
+                "Degree": 45,
+                "Label": "NE"
+            },
+            {
+                "Degree": 90,
+                "Label": "E"
+            },
+            {
+                "Degree": 135,
+                "Label": "SE"
+            },
+            {
+                "Degree": 180,
+                "Label": "S"
+            },
+            {
+                "Degree": 225,
+                "Label": "SW"
+            },
+            {
+                "Degree": 270,
+                "Label": "W"
+            },
+            {
+                "Degree": 315,
+                "Label": "NW"
+            }
+        ],
+        "TickSpacingDeg": 5.0,
+        "CenterIndicatorTriangle": true,
+        "ColorHex": "#F8FAFC"
+    }
+}

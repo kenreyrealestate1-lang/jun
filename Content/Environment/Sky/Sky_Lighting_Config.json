@@ -1,0 +1,120 @@
+{
+    "DirectionalLight_Sun": {
+        "Mobility": "Movable",
+        "IntensityLux": 75000.0,
+        "LightColorTempKelvin": 4800.0,
+        "SolarElevationDeg": 25.0,
+        "SolarAzimuthDeg": 225.0,
+        "bAtmosphereSunLight": true,
+        "AtmosphereSunLightIndex": 0,
+        "SourceAngle": 0.5357,
+        "DynamicShadowDistanceMovableLight": 25000.0,
+        "VirtualShadowMapResolution": "High"
+    },
+    "SkyAtmosphere": {
+        "TransformMode": "PlanetTopAtAbsoluteWorldPosition",
+        "PlanetRadiusKm": 6360.0,
+        "AtmosphereHeightKm": 60.0,
+        "RayleighScatteringCoeff": [
+            0.175,
+            0.409,
+            1.0
+        ],
+        "RayleighExponentialDistribution": 8.0,
+        "MieScatteringCoeff": [
+            0.003996,
+            0.003996,
+            0.003996
+        ],
+        "MieAbsorptionCoeff": [
+            0.000444,
+            0.000444,
+            0.000444
+        ],
+        "GroundAlbedo": [
+            0.18,
+            0.22,
+            0.15
+        ]
+    },
+    "VolumetricCloud": {
+        "LayerBottomAltitudeKm": 1.5,
+        "LayerHeightKm": 2.5,
+        "CoverageRatio": 0.35,
+        "ViewDistanceKm": 25.0,
+        "TracingMaxDistanceKm": 35.0,
+        "ShadowTracingDistanceKm": 15.0
+    },
+    "SkyLight": {
+        "Mobility": "Movable",
+        "bRealTimeCapture": true,
+        "LowerHemisphereIsBlack": false,
+        "LowerHemisphereColor": [
+            0.08,
+            0.1,
+            0.08,
+            1.0
+        ],
+        "VolumetricScatteringIntensity": 1.25
+    },
+    "ExponentialHeightFog": {
+        "FogDensity": 0.008,
+        "FogHeightFalloff": 0.0015,
+        "FogInscatteringColor": [
+            0.72,
+            0.78,
+            0.85,
+            1.0
+        ],
+        "bEnableVolumetricFog": true,
+        "VolumetricFogScatteringDistribution": 0.25,
+        "VolumetricFogAlbedo": [
+            0.85,
+            0.88,
+            0.92,
+            1.0
+        ],
+        "VolumetricFogExtinctionScale": 1.0,
+        "VolumetricFogDistance": 18000.0
+    },
+    "SunPositionCalculator": {
+        "Latitude": 45.2,
+        "Longitude": 5.5,
+        "Timezone": 1.0,
+        "Month": 9,
+        "Day": 15,
+        "Hour": 16,
+        "Minute": 30,
+        "Second": 0,
+        "CalculatedElevation": 25.14,
+        "CalculatedAzimuth": 224.8
+    },
+    "PostProcessVolume_Global": {
+        "bUnbound": true,
+        "Exposure": {
+            "Method": "Manual",
+            "ApplyPhysicalCameraExposure": true,
+            "EV100": 14.5,
+            "MinEV100": 12.0,
+            "MaxEV100": 16.0
+        },
+        "ColorGrading": {
+            "Tonemapper": "ACES",
+            "Temperature": 5200.0,
+            "Tint": 0.0,
+            "Saturation": 1.02,
+            "Contrast": 1.05
+        },
+        "Lens": {
+            "BloomMethod": "Standard",
+            "BloomIntensity": 0.15,
+            "BloomThreshold": 1.2,
+            "VignetteIntensity": 0.15,
+            "FilmGrainIntensity": 0.0
+        },
+        "HDRI": {
+            "bUseHDRI": false,
+            "Reason": "\u00c9clairage 100% natif physique SkyAtmosphere + DirectionalLight 25\u00b0"
+        }
+    }
+}

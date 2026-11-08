@@ -1,0 +1,63 @@
+{
+    "WidgetName": "WBP_TitleScreen",
+    "ParentClass": "CommonUserWidget",
+    "Root": "Overlay",
+    "Elements": [
+        {
+            "Type": "Image",
+            "Name": "Img_Logo_AyWorld",
+            "Source": "/Game/UI/Textures/T_Logo_AyWorld_Light",
+            "Alignment": "TopCenter",
+            "MarginTop": 110,
+            "Size": [
+                680,
+                204
+            ]
+        },
+        {
+            "Type": "VerticalBox",
+            "Name": "VBox_NavButtons",
+            "Alignment": "BottomCenter",
+            "MarginBottom": 140,
+            "ButtonSpacing": 18,
+            "Buttons": [
+                {
+                    "ID": "Btn_StartGame",
+                    "Text": "COMMENCER L'EXPLORATION",
+                    "Action": "OpenLevel('/Game/Maps/L_World')",
+                    "FocusedByDefault": true,
+                    "HoverSound": "/Game/Audio/UI/Cue_Button_Hover",
+                    "ClickSound": "/Game/Audio/UI/Cue_Button_Confirm"
+                },
+                {
+                    "ID": "Btn_Options",
+                    "Text": "OPTIONS & PARAM\u00c8TRES",
+                    "Action": "OpenWidget('WBP_Options')",
+                    "HoverSound": "/Game/Audio/UI/Cue_Button_Hover",
+                    "ClickSound": "/Game/Audio/UI/Cue_Button_Confirm"
+                },
+                {
+                    "ID": "Btn_Quit",
+                    "Text": "QUITTER L'EXP\u00c9RIENCE",
+                    "Action": "QuitGame()",
+                    "HoverSound": "/Game/Audio/UI/Cue_Button_Hover",
+                    "ClickSound": "/Game/Audio/UI/Cue_Button_Back"
+                }
+            ]
+        },
+        {
+            "Type": "TextBlock",
+            "Name": "Txt_GamepadPrompt",
+            "Text": "Appuyez sur [A] / [Entr\u00e9e] pour s\u00e9lectionner",
+            "Font": "Plus Jakarta Sans 12pt Regular",
+            "ColorHex": "#94A3B8",
+            "Alignment": "BottomRight",
+            "Margin": [
+                0,
+                0,
+                40,
+                25
+            ]
+        }
+    ]
+}

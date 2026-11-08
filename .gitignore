@@ -1,0 +1,28 @@
+# Node / Web Application
+node_modules/
+build/
+dist/
+coverage/
+.DS_Store
+*.log
+.env*
+!.env.example
+
+# Unreal Engine Standard Ignores
+Binaries/
+Intermediate/
+Saved/
+DerivedDataCache/
+.vs/
+*.sln
+*.suo
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.opendb
+.idea/
+.vscode/
+
+# Build and crash artifacts
+CrashReportClient/
+Script/Engine/

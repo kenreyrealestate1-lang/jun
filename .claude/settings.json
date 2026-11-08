@@ -1,0 +1,29 @@
+{
+  "enabledPlugins": [
+    "unreal-engine-skills-for-claude-code"
+  ],
+  "permissions": {
+    "allow": [
+      "git",
+      "python Scripts/**",
+      "unreal-mcp:*",
+      "meshy:*",
+      "higgsfield:*"
+    ],
+    "deny": [
+      "rm -rf *",
+      "git push --force",
+      "delete Content/**",
+      "rm Content/**"
+    ]
+  },
+  "hooks": {
+    "PreToolUse": {
+      "condition": "tool.name.startsWith('chrome_') || tool.name.startsWith('browser_')",
+      "action": "check_file_exists",
+      "requiredFile": ".claude/PERMISSION_GRANTED",
+      "checkTimestampToday": true,
+      "message": "Blocage règle 8 : l'ouverture de Chrome exige une permission explicite et la présence de .claude/PERMISSION_GRANTED du jour."
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+    "Name": "M_Landscape_Substrate_Auto",
+    "Class": "Material",
+    "MaterialDomain": "MD_Surface",
+    "BlendMode": "BLEND_Opaque",
+    "ShadingModel": "MSM_Substrate",
+    "SubstrateSettings": {
+        "BytesPerPixel": 128,
+        "EnableSubsurface": true,
+        "EnableClearCoat": false
+    },
+    "Layers": [
+        {
+            "Name": "Grass_Alpine_Valley",
+            "ColorHex": "#1C3B2B",
+            "Albedo": [
+                0.11,
+                0.23,
+                0.17
+            ],
+            "Roughness": 0.75,
+            "MicroDetailScale": 0.05,
+            "MacroTilingNoiseScale": 0.0005,
+            "Condition": "Altitude < 1400m AND Slope < 25 deg"
+        },
+        {
+            "Name": "Soil_River_Gravel",
+            "ColorHex": "#78716C",
+            "Albedo": [
+                0.47,
+                0.44,
+                0.42
+            ],
+            "Roughness": 0.85,
+            "MicroDetailScale": 0.02,
+            "Condition": "Near River Path AND Slope < 15 deg"
+        },
+        {
+            "Name": "Karst_Dolomite_Rock",
+            "ColorHex": "#D5D0C7",
+            "Albedo": [
+                0.83,
+                0.81,
+                0.78
+            ],
+            "Roughness": 0.8,
+            "MicroDetailScale": 0.08,
+            "TriplanarMapping": true,
+            "Condition": "Slope > 35 deg (Cliff Blending)"
+        },
+        {
+            "Name": "Alpine_Snow_Neve",
+            "ColorHex": "#F8FAFC",
+            "Albedo": [
+                0.97,
+                0.98,
+                0.99
+            ],
+            "Roughness": 0.35,
+            "SubsurfaceScattering": 0.45,
+            "Condition": "Altitude > 1800m"
+        }
+    ],
+    "MacroVariation": {
+        "NoiseContrast": 0.35,
+        "DistanceFadeStartMeters": 50.0,
+        "DistanceFadeEndMeters": 600.0
+    }
+}
